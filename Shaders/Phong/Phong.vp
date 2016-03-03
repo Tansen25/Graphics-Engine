@@ -1,0 +1,35 @@
+
+//Phong Shader
+//Vertex Shader
+#version 330
+
+//Incoming per vertex
+in vec4 vertex;
+in vec3 vNormal;
+
+//Set per batch
+uniform mat4 mvp;
+uniform mat4 mv;
+uniform mat3 normal;
+
+uniform vec3 lightPosition;
+
+//Color to the fragment shader
+smooth out vec3 varyingNormal;
+smooth out vec3 varyingLightDir;
+
+void main(void)
+{
+	//Get surface normal in eye coordinates
+	varyingNormal = normal * vNormal;
+
+	//Get vertex position in eye coordinates
+	vec4 position4 = mv * vertex;
+	vec3 position3 = position4.xyz / position4.w;
+
+	//Get vector to the light source
+	varyingLightDir = normalize(lightPosition - position3);
+
+	//Transform the geometry
+	gl_Position = mvp * vertex;
+}

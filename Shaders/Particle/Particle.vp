@@ -1,0 +1,47 @@
+
+// Particle Shader
+// Vertex Shader
+#version 130
+
+// Incoming per vertex... position
+in vec4 vertex;
+
+//Set per batch
+uniform vec4 color;
+
+uniform vec4 position;
+uniform vec4 cameraPosition;
+
+uniform mat4 mvp;
+
+//Outgoing to the fragment shader
+out vec4 outColor;
+
+void main(void) 
+{
+	outColor = color;
+
+	//Find the distance between the point sprite and the camera
+	//float d = distance(position, cameraPosition);
+	//vec4 v = cameraPosition - position;
+	//v = v * d;
+
+	//Adjust the size of the particle
+	//gl_PointSize = 30.0 + (vNewVertex.z / sqrt(-vNewVertex.z));
+	//gl_PointSize = clamp(200.0 * 1.0 / sqrt(d), 0.0, 80.0);
+	if (position.z < 0)
+	{
+		gl_PointSize = 30.0 + (position.z / sqrt(-position.z));
+	}
+	else
+	{
+		gl_PointSize = 30.0 + (position.z / sqrt(position.z));
+	}
+
+	// If they are very small, fade them up
+	if(gl_PointSize < 4.0)
+		outColor = smoothstep(0.0, 100.0, gl_PointSize) * outColor;
+
+	// Don't forget to transform the geometry!
+	gl_Position = mvp * position;
+}

@@ -1,0 +1,67 @@
+
+//Gouraud Shader
+//Vertex Shader
+#version 330
+
+//Incoming per vertex
+in vec4 vertex;
+in vec3 vNormal;
+
+//Set per batch
+uniform vec4 ambientColor;
+uniform vec4 diffuseColor;
+uniform vec4 specularColor;
+uniform float shininess;
+
+uniform vec3 lightPosition;
+
+uniform mat4 mvp;
+uniform mat4 mv;
+uniform mat3 normal;
+
+//Color to fragment program
+smooth out vec4 varyingColor;
+
+void main(void)
+{
+	//Get surface normal in eye coordinates
+	vec3 eyeNormal = normal * vNormal;
+
+	//Get vertex position in eye coordinates
+	vec4 position4 = mv * vertex;
+	vec3 position3 = position4.xyz / position4.w;
+
+	//Get vector to light source
+	vec3 lightDir = normalize(lightPosition - position3);
+
+	//Dot product gives us diffuse intensity
+	float t = dot(eyeNormal, lightDir);
+
+	float diff = max(0.0, t);
+
+	//Multiply intensity by the diffuse color
+	varyingColor = diff * diffuseColor;
+
+	//Add in ambient light
+	varyingColor += ambientColor;
+
+	//Specular light
+	if (diff != 0)
+	{
+		vec3 reflection = normalize(reflect(-lightDir, eyeNormal));
+		
+		float s = dot(eyeNormal, reflection);
+
+		float spec = max(0.0, s);
+
+		float fSpec = pow(spec, shininess);
+
+		varyingColor.rgb += vec3(fSpec, fSpec, fSpec) * specularColor.rgb;
+	}
+
+	//Force alpha to 1.0
+	varyingColor.a = 1.0;
+
+	//Transform geometry
+	gl_Position = mvp * vertex;
+}

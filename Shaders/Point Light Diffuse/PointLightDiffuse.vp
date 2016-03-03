@@ -1,0 +1,48 @@
+
+//Point Light Diffuse Shader
+//Vertex Shader
+#version 330
+
+//Incoming per vertex
+in vec4 vertex;
+in vec3 vNormal;
+
+//Set per batch
+uniform vec4 diffuseColor;
+uniform vec3 lightPosition;
+uniform mat4 mvp;
+uniform mat4 mv;
+uniform mat3 normal;
+
+//Color to fragment program
+smooth out vec4 varyingColor;
+
+void main(void)
+{
+	//Get surface normal in eye coordinates
+	vec3 eyeNormal = normal * vNormal;
+
+	//Get vertex position in eye coordinates
+	vec4 position4 = mv * vertex;
+	vec3 position3 = position4.xyz / position4.w;
+
+	//Get vector to light source
+	vec3 lightDir = normalize(lightPosition - position3);
+
+	float t = dot(eyeNormal, lightDir);
+
+	if (t < 0)
+	{
+		t = -t;
+	}
+
+	//Dot product gives us diffuse intensity
+	float diff = max(0.0, t);
+
+	//Multiply intensity by diffuse color, force alpha to 1.0
+	varyingColor.rgb = diff * diffuseColor.rgb;
+	varyingColor.a = 1.0;
+
+	//Transform the geometry
+	gl_Position = mvp * vertex;
+}
