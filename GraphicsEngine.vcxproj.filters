@@ -1,0 +1,543 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="_OpenGL Libraries">
+      <UniqueIdentifier>{af85cddf-e614-4022-8be2-5f2b2089bd51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rendering Framework">
+      <UniqueIdentifier>{c2275c38-785d-413e-8f39-40783d9c972e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Math Library">
+      <UniqueIdentifier>{aad83cca-de77-480f-bca2-e1d64504e9fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics Object">
+      <UniqueIdentifier>{da1987b3-5ee5-4a44-bbbd-3f484ef4a3ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scenes">
+      <UniqueIdentifier>{eeb4cda6-c127-4261-98f0-acd611b5bf05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Primitives">
+      <UniqueIdentifier>{0e276cd8-1be5-40d0-952d-0d06f0f523ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Camera">
+      <UniqueIdentifier>{2569e704-cde1-4764-840b-1eed02130894}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Primitives\Triangle">
+      <UniqueIdentifier>{cb80649c-c29d-4c2f-a875-428f45990d84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Attribute Alterators">
+      <UniqueIdentifier>{a27d351a-4b5d-47d1-ab5b-7c898d031f82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Primitives\Square">
+      <UniqueIdentifier>{00042ab9-0c3b-4f27-b603-c8bb5b11c6c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Primitives\Rectangle">
+      <UniqueIdentifier>{0946ce99-4895-4c60-8a0e-0278914a8ece}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Primitives\Pyramid">
+      <UniqueIdentifier>{f0f26606-a95b-4420-bfea-70c6e44b82f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Global Variable Manager">
+      <UniqueIdentifier>{6c49ddd3-03fe-463c-8aa1-f8c0a619731d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Primitives\Sphere">
+      <UniqueIdentifier>{13883577-7975-45fd-bf8e-8429cc12252f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Primitives\Torus">
+      <UniqueIdentifier>{b95ada84-9e7e-41ca-87b2-a69f459af965}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Texture Manager">
+      <UniqueIdentifier>{1765bbd7-5704-4c53-8cf3-9b4b7bbccc39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{f7e0c2d7-e86b-4414-a49e-08085b98edfc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\Point Light Diffuse">
+      <UniqueIdentifier>{29b08fa2-c7be-4b30-88d8-014c653592fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\Flat">
+      <UniqueIdentifier>{5cd01d4a-3e6e-464f-9c06-94feb4deace9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\Gouraud">
+      <UniqueIdentifier>{2ea820a7-1ece-4aeb-808f-dd348bdccbe6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\Phong">
+      <UniqueIdentifier>{43272f94-dc08-434b-82c1-3eef777dd0ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\Texture Point Light Diffuse">
+      <UniqueIdentifier>{905c560f-2578-4263-aaee-217dd81cb7ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\Texture Gouraud">
+      <UniqueIdentifier>{65a682be-7285-40b3-8de7-d9e0d5b46141}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\Texture Phong">
+      <UniqueIdentifier>{123ad10b-9991-498b-b978-160698c9ea2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Primitives\Box">
+      <UniqueIdentifier>{2508c63f-40dd-49de-86a2-5fee612fe678}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Primitives\Cylinder">
+      <UniqueIdentifier>{c8af0232-ac38-4eaa-b61e-52ba917d8bfe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Primitives\Disk">
+      <UniqueIdentifier>{525b6f97-eeed-4b9d-8f7e-31550bfd4a33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\Dissolve">
+      <UniqueIdentifier>{c45bda04-5f2b-4c7a-a3db-6c7f61176ea6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\Cell Shader">
+      <UniqueIdentifier>{978500f5-fb51-4e9e-9809-e8d041621b68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Primitives\Floor">
+      <UniqueIdentifier>{72fd97ac-8aad-49bc-a2f5-ec41467bf585}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Particle System">
+      <UniqueIdentifier>{918ec9ff-cd0a-4cbb-86c1-c5b2931afe4f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\Particle">
+      <UniqueIdentifier>{af446ea0-15d8-40bd-9545-d5074d2f559f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Physics">
+      <UniqueIdentifier>{c731e5a5-eb3f-42bd-86f3-fcf0abc45be4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Setup.cpp">
+      <Filter>Rendering Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderScene.cpp">
+      <Filter>Rendering Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicsManager.cpp">
+      <Filter>Graphics Object</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneManager.cpp">
+      <Filter>Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene1.cpp">
+      <Filter>Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene2.cpp">
+      <Filter>Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene3.cpp">
+      <Filter>Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="UserInterface.cpp">
+      <Filter>Rendering Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraManager.cpp">
+      <Filter>Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Triangle.cpp">
+      <Filter>Primitives\Triangle</Filter>
+    </ClCompile>
+    <ClCompile Include="TriangleObject.cpp">
+      <Filter>Primitives\Triangle</Filter>
+    </ClCompile>
+    <ClCompile Include="ColorChanger.cpp">
+      <Filter>Attribute Alterators</Filter>
+    </ClCompile>
+    <ClCompile Include="RotationChanger.cpp">
+      <Filter>Attribute Alterators</Filter>
+    </ClCompile>
+    <ClCompile Include="ScaleChanger.cpp">
+      <Filter>Attribute Alterators</Filter>
+    </ClCompile>
+    <ClCompile Include="TranslationChanger.cpp">
+      <Filter>Attribute Alterators</Filter>
+    </ClCompile>
+    <ClCompile Include="Square.cpp">
+      <Filter>Primitives\Square</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicsObject.cpp">
+      <Filter>Graphics Object</Filter>
+    </ClCompile>
+    <ClCompile Include="SquareObject.cpp">
+      <Filter>Primitives\Square</Filter>
+    </ClCompile>
+    <ClCompile Include="Rectangle.cpp">
+      <Filter>Primitives\Rectangle</Filter>
+    </ClCompile>
+    <ClCompile Include="RectangleObject.cpp">
+      <Filter>Primitives\Rectangle</Filter>
+    </ClCompile>
+    <ClCompile Include="Pyramid.cpp">
+      <Filter>Primitives\Pyramid</Filter>
+    </ClCompile>
+    <ClCompile Include="PyramidObject.cpp">
+      <Filter>Primitives\Pyramid</Filter>
+    </ClCompile>
+    <ClCompile Include="GlobalVariableManager.cpp">
+      <Filter>Global Variable Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Sphere.cpp">
+      <Filter>Primitives\Sphere</Filter>
+    </ClCompile>
+    <ClCompile Include="SphereObject.cpp">
+      <Filter>Primitives\Sphere</Filter>
+    </ClCompile>
+    <ClCompile Include="Torus.cpp">
+      <Filter>Primitives\Torus</Filter>
+    </ClCompile>
+    <ClCompile Include="TorusObject.cpp">
+      <Filter>Primitives\Torus</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureManager.cpp">
+      <Filter>Texture Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Shutdown.cpp">
+      <Filter>Rendering Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="ShaderManager.cpp">
+      <Filter>Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene4.cpp">
+      <Filter>Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene5.cpp">
+      <Filter>Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene6.cpp">
+      <Filter>Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="Box.cpp">
+      <Filter>Primitives\Box</Filter>
+    </ClCompile>
+    <ClCompile Include="BoxObject.cpp">
+      <Filter>Primitives\Box</Filter>
+    </ClCompile>
+    <ClCompile Include="Cylinder.cpp">
+      <Filter>Primitives\Cylinder</Filter>
+    </ClCompile>
+    <ClCompile Include="CylinderObject.cpp">
+      <Filter>Primitives\Cylinder</Filter>
+    </ClCompile>
+    <ClCompile Include="Disk.cpp">
+      <Filter>Primitives\Disk</Filter>
+    </ClCompile>
+    <ClCompile Include="DissolveChanger.cpp">
+      <Filter>Attribute Alterators</Filter>
+    </ClCompile>
+    <ClCompile Include="DiskObject.cpp">
+      <Filter>Primitives\Disk</Filter>
+    </ClCompile>
+    <ClCompile Include="Floor.cpp">
+      <Filter>Primitives\Floor</Filter>
+    </ClCompile>
+    <ClCompile Include="FloorObject.cpp">
+      <Filter>Primitives\Floor</Filter>
+    </ClCompile>
+    <ClCompile Include="Particle.cpp">
+      <Filter>Particle System</Filter>
+    </ClCompile>
+    <ClCompile Include="ParticleObject.cpp">
+      <Filter>Particle System</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene7.cpp">
+      <Filter>Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="ParticleEmitter.cpp">
+      <Filter>Particle System</Filter>
+    </ClCompile>
+    <ClCompile Include="Gravity.cpp">
+      <Filter>Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="AirResistance.cpp">
+      <Filter>Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene8.cpp">
+      <Filter>Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene9.cpp">
+      <Filter>Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene10.cpp">
+      <Filter>Scenes</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Setup.h">
+      <Filter>Rendering Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderScene.h">
+      <Filter>Rendering Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGLWrapper.h">
+      <Filter>_OpenGL Libraries</Filter>
+    </ClInclude>
+    <ClInclude Include="MathEngine\Constants.h">
+      <Filter>_Math Library</Filter>
+    </ClInclude>
+    <ClInclude Include="MathEngine\Enum.h">
+      <Filter>_Math Library</Filter>
+    </ClInclude>
+    <ClInclude Include="MathEngine\MathApp.h">
+      <Filter>_Math Library</Filter>
+    </ClInclude>
+    <ClInclude Include="MathEngine\MathEngine.h">
+      <Filter>_Math Library</Filter>
+    </ClInclude>
+    <ClInclude Include="MathEngine\Matrix.h">
+      <Filter>_Math Library</Filter>
+    </ClInclude>
+    <ClInclude Include="MathEngine\Quat.h">
+      <Filter>_Math Library</Filter>
+    </ClInclude>
+    <ClInclude Include="MathEngine\QuatApp.h">
+      <Filter>_Math Library</Filter>
+    </ClInclude>
+    <ClInclude Include="MathEngine\Util.h">
+      <Filter>_Math Library</Filter>
+    </ClInclude>
+    <ClInclude Include="MathEngine\Vect.h">
+      <Filter>_Math Library</Filter>
+    </ClInclude>
+    <ClInclude Include="MathEngine\VectApp.h">
+      <Filter>_Math Library</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicsObject.h">
+      <Filter>Graphics Object</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicsManager.h">
+      <Filter>Graphics Object</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneManager.h">
+      <Filter>Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneBase.h">
+      <Filter>Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene1.h">
+      <Filter>Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene2.h">
+      <Filter>Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene3.h">
+      <Filter>Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="UserInterface.h">
+      <Filter>Rendering Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraManager.h">
+      <Filter>Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Triangle.h">
+      <Filter>Primitives\Triangle</Filter>
+    </ClInclude>
+    <ClInclude Include="TriangleObject.h">
+      <Filter>Primitives\Triangle</Filter>
+    </ClInclude>
+    <ClInclude Include="ColorChanger.h">
+      <Filter>Attribute Alterators</Filter>
+    </ClInclude>
+    <ClInclude Include="RotationChanger.h">
+      <Filter>Attribute Alterators</Filter>
+    </ClInclude>
+    <ClInclude Include="ScaleChanger.h">
+      <Filter>Attribute Alterators</Filter>
+    </ClInclude>
+    <ClInclude Include="TranslationChanger.h">
+      <Filter>Attribute Alterators</Filter>
+    </ClInclude>
+    <ClInclude Include="Square.h">
+      <Filter>Primitives\Square</Filter>
+    </ClInclude>
+    <ClInclude Include="SquareObject.h">
+      <Filter>Primitives\Square</Filter>
+    </ClInclude>
+    <ClInclude Include="Rectangle.h">
+      <Filter>Primitives\Rectangle</Filter>
+    </ClInclude>
+    <ClInclude Include="RectangleObject.h">
+      <Filter>Primitives\Rectangle</Filter>
+    </ClInclude>
+    <ClInclude Include="Pyramid.h">
+      <Filter>Primitives\Pyramid</Filter>
+    </ClInclude>
+    <ClInclude Include="PyramidObject.h">
+      <Filter>Primitives\Pyramid</Filter>
+    </ClInclude>
+    <ClInclude Include="GlobalVariableManager.h">
+      <Filter>Global Variable Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Sphere.h">
+      <Filter>Primitives\Sphere</Filter>
+    </ClInclude>
+    <ClInclude Include="SphereObject.h">
+      <Filter>Primitives\Sphere</Filter>
+    </ClInclude>
+    <ClInclude Include="Torus.h">
+      <Filter>Primitives\Torus</Filter>
+    </ClInclude>
+    <ClInclude Include="TorusObject.h">
+      <Filter>Primitives\Torus</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureManager.h">
+      <Filter>Texture Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Shutdown.h">
+      <Filter>Rendering Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderManager.h">
+      <Filter>Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene4.h">
+      <Filter>Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene5.h">
+      <Filter>Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene6.h">
+      <Filter>Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Box.h">
+      <Filter>Primitives\Box</Filter>
+    </ClInclude>
+    <ClInclude Include="BoxObject.h">
+      <Filter>Primitives\Box</Filter>
+    </ClInclude>
+    <ClInclude Include="Cylinder.h">
+      <Filter>Primitives\Cylinder</Filter>
+    </ClInclude>
+    <ClInclude Include="CylinderObject.h">
+      <Filter>Primitives\Cylinder</Filter>
+    </ClInclude>
+    <ClInclude Include="Disk.h">
+      <Filter>Primitives\Disk</Filter>
+    </ClInclude>
+    <ClInclude Include="DiskObject.h">
+      <Filter>Primitives\Disk</Filter>
+    </ClInclude>
+    <ClInclude Include="DissolveChanger.h">
+      <Filter>Attribute Alterators</Filter>
+    </ClInclude>
+    <ClInclude Include="Floor.h">
+      <Filter>Primitives\Floor</Filter>
+    </ClInclude>
+    <ClInclude Include="FloorObject.h">
+      <Filter>Primitives\Floor</Filter>
+    </ClInclude>
+    <ClInclude Include="Particle.h">
+      <Filter>Particle System</Filter>
+    </ClInclude>
+    <ClInclude Include="ParticleObject.h">
+      <Filter>Particle System</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene7.h">
+      <Filter>Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="ParticleEmitter.h">
+      <Filter>Particle System</Filter>
+    </ClInclude>
+    <ClInclude Include="Force.h">
+      <Filter>Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Gravity.h">
+      <Filter>Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="AirResistance.h">
+      <Filter>Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene8.h">
+      <Filter>Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene9.h">
+      <Filter>Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene10.h">
+      <Filter>Scenes</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="OpenGLLibraries\GLTools\lib\gltools.lib">
+      <Filter>_OpenGL Libraries</Filter>
+    </Library>
+    <Library Include="OpenGLLibraries\Glut\lib\freeglut_static.lib">
+      <Filter>_OpenGL Libraries</Filter>
+    </Library>
+    <Library Include="Debug\MathEngineDebug.lib">
+      <Filter>_Math Library</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Shaders\Point Light Diffuse\PointLightDiffuse.fp">
+      <Filter>Shaders\Point Light Diffuse</Filter>
+    </None>
+    <None Include="Shaders\Point Light Diffuse\PointLightDiffuse.vp">
+      <Filter>Shaders\Point Light Diffuse</Filter>
+    </None>
+    <None Include="Shaders\Flat\Flat.fp">
+      <Filter>Shaders\Flat</Filter>
+    </None>
+    <None Include="Shaders\Flat\Flat.vp">
+      <Filter>Shaders\Flat</Filter>
+    </None>
+    <None Include="Shaders\Gouraud\Gouraud.fp">
+      <Filter>Shaders\Gouraud</Filter>
+    </None>
+    <None Include="Shaders\Gouraud\Gouraud.vp">
+      <Filter>Shaders\Gouraud</Filter>
+    </None>
+    <None Include="Shaders\Phong\Phong.fp">
+      <Filter>Shaders\Phong</Filter>
+    </None>
+    <None Include="Shaders\Phong\Phong.vp">
+      <Filter>Shaders\Phong</Filter>
+    </None>
+    <None Include="Shaders\Texture Point Light Diffuse\TexturePointLightDiffuse.fp">
+      <Filter>Shaders\Texture Point Light Diffuse</Filter>
+    </None>
+    <None Include="Shaders\Texture Point Light Diffuse\TexturePointLightDiffuse.vp">
+      <Filter>Shaders\Texture Point Light Diffuse</Filter>
+    </None>
+    <None Include="Shaders\Texture Gouraud\TextureGouraud.fp">
+      <Filter>Shaders\Texture Gouraud</Filter>
+    </None>
+    <None Include="Shaders\Texture Gouraud\TextureGouraud.vp">
+      <Filter>Shaders\Texture Gouraud</Filter>
+    </None>
+    <None Include="Shaders\Texture Phong\TexturePhong.fp">
+      <Filter>Shaders\Texture Phong</Filter>
+    </None>
+    <None Include="Shaders\Texture Phong\TexturePhong.vp">
+      <Filter>Shaders\Texture Phong</Filter>
+    </None>
+    <None Include="Shaders\Dissolve\Dissolve.fp">
+      <Filter>Shaders\Dissolve</Filter>
+    </None>
+    <None Include="Shaders\Dissolve\Dissolve.vp">
+      <Filter>Shaders\Dissolve</Filter>
+    </None>
+    <None Include="Shaders\Cell Shader\Cell.fp">
+      <Filter>Shaders\Cell Shader</Filter>
+    </None>
+    <None Include="Shaders\Cell Shader\Cell.vp">
+      <Filter>Shaders\Cell Shader</Filter>
+    </None>
+    <None Include="Shaders\Particle\Particle.fp">
+      <Filter>Shaders\Particle</Filter>
+    </None>
+    <None Include="Shaders\Particle\Particle.vp">
+      <Filter>Shaders\Particle</Filter>
+    </None>
+  </ItemGroup>
+</Project>

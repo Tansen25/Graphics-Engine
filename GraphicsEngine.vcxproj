@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7D9D5274-33A7-44AD-B6EF-2CCE4DDB62D7}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>GraphicsEngine</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)OpenGLLibraries\GLTools\include;$(SolutionDir)OpenGLLibraries\Glut\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AirResistance.cpp" />
+    <ClCompile Include="Box.cpp" />
+    <ClCompile Include="BoxObject.cpp" />
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="CameraManager.cpp" />
+    <ClCompile Include="ColorChanger.cpp" />
+    <ClCompile Include="Cylinder.cpp" />
+    <ClCompile Include="CylinderObject.cpp" />
+    <ClCompile Include="DiskObject.cpp" />
+    <ClCompile Include="Disk.cpp" />
+    <ClCompile Include="DissolveChanger.cpp" />
+    <ClCompile Include="Floor.cpp" />
+    <ClCompile Include="FloorObject.cpp" />
+    <ClCompile Include="GlobalVariableManager.cpp" />
+    <ClCompile Include="GraphicsManager.cpp" />
+    <ClCompile Include="GraphicsObject.cpp" />
+    <ClCompile Include="Gravity.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Particle.cpp" />
+    <ClCompile Include="ParticleEmitter.cpp" />
+    <ClCompile Include="ParticleObject.cpp" />
+    <ClCompile Include="Pyramid.cpp" />
+    <ClCompile Include="PyramidObject.cpp" />
+    <ClCompile Include="Rectangle.cpp" />
+    <ClCompile Include="RectangleObject.cpp" />
+    <ClCompile Include="RenderScene.cpp" />
+    <ClCompile Include="RotationChanger.cpp" />
+    <ClCompile Include="ScaleChanger.cpp" />
+    <ClCompile Include="Scene1.cpp" />
+    <ClCompile Include="Scene10.cpp" />
+    <ClCompile Include="Scene2.cpp" />
+    <ClCompile Include="Scene3.cpp" />
+    <ClCompile Include="Scene4.cpp" />
+    <ClCompile Include="Scene5.cpp" />
+    <ClCompile Include="Scene6.cpp" />
+    <ClCompile Include="Scene7.cpp" />
+    <ClCompile Include="Scene8.cpp" />
+    <ClCompile Include="Scene9.cpp" />
+    <ClCompile Include="SceneManager.cpp" />
+    <ClCompile Include="Setup.cpp" />
+    <ClCompile Include="ShaderManager.cpp" />
+    <ClCompile Include="Shutdown.cpp" />
+    <ClCompile Include="Sphere.cpp" />
+    <ClCompile Include="SphereObject.cpp" />
+    <ClCompile Include="Square.cpp" />
+    <ClCompile Include="SquareObject.cpp" />
+    <ClCompile Include="TextureManager.cpp" />
+    <ClCompile Include="Torus.cpp" />
+    <ClCompile Include="TorusObject.cpp" />
+    <ClCompile Include="TranslationChanger.cpp" />
+    <ClCompile Include="Triangle.cpp" />
+    <ClCompile Include="TriangleObject.cpp" />
+    <ClCompile Include="UserInterface.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AirResistance.h" />
+    <ClInclude Include="Box.h" />
+    <ClInclude Include="BoxObject.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="CameraManager.h" />
+    <ClInclude Include="ColorChanger.h" />
+    <ClInclude Include="Cylinder.h" />
+    <ClInclude Include="CylinderObject.h" />
+    <ClInclude Include="DiskObject.h" />
+    <ClInclude Include="Disk.h" />
+    <ClInclude Include="DissolveChanger.h" />
+    <ClInclude Include="Floor.h" />
+    <ClInclude Include="FloorObject.h" />
+    <ClInclude Include="Force.h" />
+    <ClInclude Include="GlobalVariableManager.h" />
+    <ClInclude Include="GraphicsManager.h" />
+    <ClInclude Include="GraphicsObject.h" />
+    <ClInclude Include="Gravity.h" />
+    <ClInclude Include="MathEngine\Constants.h" />
+    <ClInclude Include="MathEngine\Enum.h" />
+    <ClInclude Include="MathEngine\MathApp.h" />
+    <ClInclude Include="MathEngine\MathEngine.h" />
+    <ClInclude Include="MathEngine\Matrix.h" />
+    <ClInclude Include="MathEngine\Quat.h" />
+    <ClInclude Include="MathEngine\QuatApp.h" />
+    <ClInclude Include="MathEngine\Util.h" />
+    <ClInclude Include="MathEngine\Vect.h" />
+    <ClInclude Include="MathEngine\VectApp.h" />
+    <ClInclude Include="OpenGLWrapper.h" />
+    <ClInclude Include="Particle.h" />
+    <ClInclude Include="ParticleEmitter.h" />
+    <ClInclude Include="ParticleObject.h" />
+    <ClInclude Include="Pyramid.h" />
+    <ClInclude Include="PyramidObject.h" />
+    <ClInclude Include="Rectangle.h" />
+    <ClInclude Include="RectangleObject.h" />
+    <ClInclude Include="RenderScene.h" />
+    <ClInclude Include="RotationChanger.h" />
+    <ClInclude Include="ScaleChanger.h" />
+    <ClInclude Include="Scene1.h" />
+    <ClInclude Include="Scene10.h" />
+    <ClInclude Include="Scene2.h" />
+    <ClInclude Include="Scene3.h" />
+    <ClInclude Include="Scene4.h" />
+    <ClInclude Include="Scene5.h" />
+    <ClInclude Include="Scene6.h" />
+    <ClInclude Include="Scene7.h" />
+    <ClInclude Include="Scene8.h" />
+    <ClInclude Include="Scene9.h" />
+    <ClInclude Include="SceneBase.h" />
+    <ClInclude Include="SceneManager.h" />
+    <ClInclude Include="Setup.h" />
+    <ClInclude Include="ShaderManager.h" />
+    <ClInclude Include="Shutdown.h" />
+    <ClInclude Include="Sphere.h" />
+    <ClInclude Include="SphereObject.h" />
+    <ClInclude Include="Square.h" />
+    <ClInclude Include="SquareObject.h" />
+    <ClInclude Include="TextureManager.h" />
+    <ClInclude Include="Torus.h" />
+    <ClInclude Include="TorusObject.h" />
+    <ClInclude Include="TranslationChanger.h" />
+    <ClInclude Include="Triangle.h" />
+    <ClInclude Include="TriangleObject.h" />
+    <ClInclude Include="UserInterface.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="Debug\MathEngineDebug.lib" />
+    <Library Include="OpenGLLibraries\GLTools\lib\gltools.lib" />
+    <Library Include="OpenGLLibraries\Glut\lib\freeglut_static.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Shaders\Cell Shader\Cell.fp" />
+    <None Include="Shaders\Cell Shader\Cell.vp" />
+    <None Include="Shaders\Dissolve\Dissolve.fp" />
+    <None Include="Shaders\Dissolve\Dissolve.vp" />
+    <None Include="Shaders\Flat\Flat.fp" />
+    <None Include="Shaders\Flat\Flat.vp" />
+    <None Include="Shaders\Gouraud\Gouraud.fp" />
+    <None Include="Shaders\Gouraud\Gouraud.vp" />
+    <None Include="Shaders\Particle\Particle.fp" />
+    <None Include="Shaders\Particle\Particle.vp" />
+    <None Include="Shaders\Phong\Phong.fp" />
+    <None Include="Shaders\Phong\Phong.vp" />
+    <None Include="Shaders\Point Light Diffuse\PointLightDiffuse.fp" />
+    <None Include="Shaders\Point Light Diffuse\PointLightDiffuse.vp" />
+    <None Include="Shaders\Texture Gouraud\TextureGouraud.fp" />
+    <None Include="Shaders\Texture Gouraud\TextureGouraud.vp" />
+    <None Include="Shaders\Texture Phong\TexturePhong.fp" />
+    <None Include="Shaders\Texture Phong\TexturePhong.vp" />
+    <None Include="Shaders\Texture Point Light Diffuse\TexturePointLightDiffuse.fp" />
+    <None Include="Shaders\Texture Point Light Diffuse\TexturePointLightDiffuse.vp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

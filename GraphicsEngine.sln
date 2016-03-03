@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MathEngine", "MathEngine\MathEngine.vcxproj", "{5122B556-8547-48D7-ACF6-1466C0180FF4}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GraphicsEngine", "GraphicsEngine.vcxproj", "{7D9D5274-33A7-44AD-B6EF-2CCE4DDB62D7}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5122B556-8547-48D7-ACF6-1466C0180FF4} = {5122B556-8547-48D7-ACF6-1466C0180FF4}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5122B556-8547-48D7-ACF6-1466C0180FF4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5122B556-8547-48D7-ACF6-1466C0180FF4}.Debug|Win32.Build.0 = Debug|Win32
+		{5122B556-8547-48D7-ACF6-1466C0180FF4}.Release|Win32.ActiveCfg = Release|Win32
+		{5122B556-8547-48D7-ACF6-1466C0180FF4}.Release|Win32.Build.0 = Release|Win32
+		{7D9D5274-33A7-44AD-B6EF-2CCE4DDB62D7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7D9D5274-33A7-44AD-B6EF-2CCE4DDB62D7}.Debug|Win32.Build.0 = Debug|Win32
+		{7D9D5274-33A7-44AD-B6EF-2CCE4DDB62D7}.Release|Win32.ActiveCfg = Release|Win32
+		{7D9D5274-33A7-44AD-B6EF-2CCE4DDB62D7}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
